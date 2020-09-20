@@ -1,13 +1,13 @@
 body {
   background-color: rgb(23, 23, 30);
   color: rgb(255, 255, 255);
-  font-family: roboto,sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18;
 }
 
-nav {
+.nav-area {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,7 +17,7 @@ nav {
 }
 
 .page-header {
-  font-family: lft-etica-mono,sans-serif;
+  font-family: lft-etica-mono, sans-serif;
   background-position: center left;
   background-repeat: no-repeat;
   background-image: url("background-header.jpg");
@@ -58,11 +58,11 @@ h2 {
   font-weight: bolder;
   font-style: normal;
   font-size: 40;
-  text-decoration:none;
+  text-decoration: none;
   text-align: center;
 }
 
-.center-text p {
+.center-justify-text p {
   margin: auto;
   width: 60%;
   line-height: 1.6;
