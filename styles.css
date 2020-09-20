@@ -61,25 +61,9 @@ h2 {
   text-align: center;
 }
 
-p {
+.center-text p {
   margin: auto;
   width: 60%;
-}
-
-p span {
-  text-align: justify;
-}
-
-.center-text {
-  text-align: justify;
-  margin: auto;
-  width: 1200;
   line-height: 1.6;
-}
-
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: justify;
 }
