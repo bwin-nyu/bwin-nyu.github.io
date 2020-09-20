@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(23, 23, 30);
+  color: rgb(255,255,255);
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24;
+}
+
+nav {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40;
+  padding-bottom: 40px;
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25;
+
+}
+
+a:link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: rgb(253, 219, 58);
+  font-weight: bold;
+}
+
+
+h1 {
+  font-family: itc-american-typewriter,serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 55;
+  padding-top: 75px;
+  color: rgb(253, 219, 58);
+}
+
+.center-text{
+  text-align: justify;
+  margin: auto;
+  width: 1200;
+  line-height: 1.6;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
