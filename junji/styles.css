@@ -5,6 +5,7 @@ body {
   height;
   font-family: manga_templeregular;
   line-height: 1.6;
+  cursor: url("./images/eye-cursor.cur"), default;
 }
 
 .page-header {
@@ -31,7 +32,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 10;
-  font-size: 20;
+  font-size: 25;
 }
 
 .nav-slides {
@@ -39,6 +40,7 @@ body {
   justify-content: space-around;
   text-align: center;
   padding: 15;
+  font-size: 20;
 }
 
 .nav-arrow {
@@ -80,31 +82,26 @@ body {
   font-weight: bolder;
 }
 
-
-
-.slides {
-  width: ;
-  height: ;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  padding: ;
-}
-
 .slide-title {
   color: white;
   font-family: manga_templeregular;
+  text-align: center;
+  font-size: 20;
 }
 
 .slide-images {
   width: ;
   height: ;
+  padding: 5px;
 }
 
 .slide-text {
   width: ;
   height: ;
+  padding: 5px;
 }
+
+.slide-text-left {}
 
 @font-face {
   font-family: 'manga_templeregular';
