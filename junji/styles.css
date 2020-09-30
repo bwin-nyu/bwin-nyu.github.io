@@ -2,7 +2,7 @@ body {
   background-color: black;
   color: white;
   width: ;
-  height ;
+  height;
   font-family: manga_templeregular;
   line-height: 1.6;
 }
@@ -17,17 +17,35 @@ body {
   background-repeat: no-repeat;
   background-position: center left;
   padding: 30;
-  background-image: url("header-background.png");;
+  background-image: url("./images/header-background.png");
+  ;
 }
 
 .nav-flex {
-  width: ;
-  height ;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+  height: 40;
+  align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 10;
+  font-size: 20;
+}
+
+.nav-slides {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 15;
+}
+
+.nav-arrow {
+  text-align: center;
+  margin: auto;
+  display: table;
+  padding-top: 15;
 }
 
 .nav-flex a:link {
@@ -37,27 +55,32 @@ body {
 }
 
 .nav-flex a:visited {
-  color: white;;
+  color: white;
+  ;
 }
 
 .nav-flex a:hover {
   color: white;
-  font-family: manga_templebold;
+  font-weight: bolder;
 }
 
-.nav-slides {
-  width: ;
-  height ;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  text-align: center;
-  padding: 15;
+.nav-slides a:link {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
 }
 
-.nav-arrows {
-
+.nav-slides a:visited {
+  color: white;
+  ;
 }
+
+.nav-slides a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+
 
 .slides {
   width: ;
@@ -83,28 +106,26 @@ body {
   height: ;
 }
 
-
-
 @font-face {
   font-family: 'manga_templeregular';
-  src: url('mangat-webfont.woff2') format('woff2'),
-    url('mangat-webfont.woff') format('woff');
+  src: url('./fonts/mangat-webfont.woff2') format('woff2'),
+    url('./fonts/mangat-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'manga_templebold';
-  src: url('mangatb-webfont.woff2') format('woff2'),
-    url('mangatb-webfont.woff') format('woff');
+  src: url('./fonts/mangatb-webfont.woff2') format('woff2'),
+    url('./fonts/mangatb-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'manga_templeitalic';
-  src: url('mangati-webfont.woff2') format('woff2'),
-    url('mangati-webfont.woff') format('woff');
+  src: url('./fonts/mangati-webfont.woff2') format('woff2'),
+    url('./fonts/mangati-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
