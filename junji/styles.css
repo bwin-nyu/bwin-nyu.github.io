@@ -3,21 +3,87 @@ body {
   color: white;
   width: ;
   height ;
+  font-family: manga_templeregular;
+  line-height: 1.6;
+}
+
+.page-header {
+  font-family: manga_templebold;
+  font-size: 35;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 4px white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 30;
+  background-image: url("header-background.png");;
 }
 
 .nav-flex {
   width: ;
   height ;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-flex a:link {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+.nav-flex a:visited {
+  color: white;;
+}
+
+.nav-flex a:hover {
+  color: white;
+  font-family: manga_templebold;
 }
 
 .nav-slides {
   width: ;
   height ;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  text-align: center;
+  padding: 15;
 }
 
-h1 {
+.nav-arrows {
+
+}
+
+.slides {
+  width: ;
+  height: ;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: ;
+}
+
+.slide-title {
+  color: white;
   font-family: manga_templeregular;
 }
+
+.slide-images {
+  width: ;
+  height: ;
+}
+
+.slide-text {
+  width: ;
+  height: ;
+}
+
+
 
 @font-face {
   font-family: 'manga_templeregular';
