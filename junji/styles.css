@@ -90,18 +90,18 @@ body {
 }
 
 .slide-images {
-  width: ;
-  height: ;
-  padding: 5px;
+  padding: 20;
+  vertical-align: middle;
 }
 
 .slide-text {
-  width: ;
-  height: ;
-  padding: 5px;
+  margin: auto;
+  width: 60%;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 5;
+  font-size: 18;
 }
-
-.slide-text-left {}
 
 @font-face {
   font-family: 'manga_templeregular';
