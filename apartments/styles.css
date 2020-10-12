@@ -1,0 +1,50 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1{
+  text-align: center;
+  padding-top: 10;
+  font-size: 70;
+  color: #5bfacc;
+  font-weight: normal;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  padding: 10;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item{
+  padding: 30;
+}
+
+.small-grid-image {
+  width: 150;
+}
+
+.medium-grid-image {
+  width: 200;
+}
+
+.large-grid-image {
+  width: 400;
+}
