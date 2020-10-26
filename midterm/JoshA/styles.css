@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "SegoeUI Bold";
+  src: url("../fonts/segoeuib.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/segoeui.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SegoeUI Italic";
+  src: url("../fonts/segoeuii.ttf") format("truetype");
+  font-style: italic;
+}
+
+body {
+  background-color: #171928;
+  color: #fe4de9;
+}
+
+.heading {
+  font-family: "SegoeUI Bold";
+  font-size: 60;
+  margin: 0;
+}
+
+.small-subhead {
+  font-family: "SegoeUI";
+  font-size: 30;
+  margin: 0;
+}
+
+.large-subhead {
+  font-family: "SegoeUI Bold";
+  font-size: 125;
+  margin: 0;
+}
+
+.condensed-text {
+  font-family: "SegoeUI";
+  font-size: 18;
+  line-height: .6;
+}
+
+.normal-body {
+  font-family: "SegoeUI";
+  font-size: 18;
+  line-height: 1.6;
+}
+
+.bold-body {
+  font-family: "SegoeUI Bold";
+  font-size: 20;
+  line-height: 1.4;
+}
+
+.nav-flex-horiz {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-flex-vert {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-flex-items {
+  padding: 5;
+}
+
+.side-grid {
+  display: grid;
+  position: absolute;
+  left: 3%;
+  top: 220px;
+  grid-template-columns: 105px 52px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.side-grid2 {
+  display: grid;
+  position: absolute;
+  left: 11%;
+  top: 225px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.right-grid {
+  display: grid;
+  position: absolute;
+  left: 60%;
+  top: 525;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
