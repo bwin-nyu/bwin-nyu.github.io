@@ -20,13 +20,6 @@ body {
   color: black;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
-
 .heading {
   font-family: "SegoeUI Bold";
   font-size: 50;
