@@ -20,6 +20,17 @@ body {
   color: #fe4de9;
 }
 
+.mobile-transparent {
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .mobile-transparent {
+    opacity: 0%;
+  }
+}
+
 .heading {
   font-family: "SegoeUI Bold";
   font-size: 60;

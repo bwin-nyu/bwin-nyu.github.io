@@ -15,16 +15,16 @@
   font-style: italic;
 }
 
+body {
+  background-color: white;
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: black;
     color: white;
   }
-}
-
-body {
-  background-color: white;
-  color: black;
 }
 
 .heading {
@@ -34,7 +34,7 @@ body {
   position: absolute;
   left: 20%;
   right: 20%;
-  top: 3%;
+  top: 5%;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ body {
   font-size: 25;
   margin: 0;
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 20%;
   right: 20%;
 }
