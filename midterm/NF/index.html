@@ -107,9 +107,14 @@
     </div>
   </div>
 
-  <audio controls autoplay loop style="position:absolute; left: 43%; top: 430; z-index: 2;">
+  <audio controls autoplay loop id="myaudio" style="position:absolute; left: 43%; top: 430; z-index: 2;">
     <source src="./likethis.mp3" type="audio/mpeg" />
   </audio>
+
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.5;
+  </script>
 
   <div class="right-grid">
     <div>
