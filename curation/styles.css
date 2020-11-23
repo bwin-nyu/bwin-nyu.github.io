@@ -1,0 +1,115 @@
+body {
+  background-color: black;
+  background: url(https://64.media.tumblr.com/73966b6acfd978cc2ae90639bd803d73/tumblr_inline_mydbkloJQm1qak244.gif) center repeat;
+}
+
+#container{
+  /* background-color:#aaa; */
+
+  margin: 0 auto;
+  padding: 20px 50px 20px 50px;
+  display:flex;
+  justify-content: space-around;
+  align-items:;
+}
+
+#title{
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  padding: 0px 50px 0px 50px; /** top right bottom left **/
+}
+
+#soundArt{
+  width: 225px;
+  height: 225px;
+  border-radius: 50px;
+  margin: 37.5px;
+  float: left;
+}
+
+#songName{
+  font-family: "Roboto";
+  font-size: 20px;
+  float: left;
+}
+
+#composer{
+  font-family: "Roboto";
+  font-size: 20px;
+  float: left;
+}
+
+#descArt{
+  float: left;
+  height: 250px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+#boxArt{
+
+}
+
+#gameHeader{
+  color: black;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  float: left;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+#gameSub{
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  float: left;
+  margin-left: 60px;
+  margin-top: -40px;
+  width: 180px;
+  line-height: 1.6;
+}
+
+#gameBody{
+  color: black;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.box{
+  background-color:white;
+  /* border:1px solid black; */
+  margin: 2%;
+  /** width:94%; **/
+  display:block;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px white;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.column{
+  display:flex;
+  flex-direction:column;
+  width:33%;
+}
+
+.box-art{
+  width: 40px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.footer{
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer a{
+  color: white;
+  padding: 25px 50px 25px 50px; /** top right bottom left **/
+}

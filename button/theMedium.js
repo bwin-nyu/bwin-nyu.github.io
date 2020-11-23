@@ -4,7 +4,7 @@ let theButton = document.querySelector("button");
 let theName = document.querySelector("p");
 
 let prevButton = document.querySelector('button[name="prev"]');
-let nextButton = document.querySelector('button[name]="next"]');
+let nextButton = document.querySelector('button[name="next"]');
 
 let firstName = document.querySelector('div[class="first"]');
 
@@ -43,6 +43,3 @@ function nextClick(){
     }
     firstName.textContent = firstNames[i];
 }
-
-
-
