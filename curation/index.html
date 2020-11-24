@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title></title>
+  <title>Our Curated Library</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,93 +18,105 @@
 
   <p id="title">Our Curated Library</p>
 
-    <div id='container'>
-      <div class="column">
-        <div class='box' style="width: 880px; height:450px; display: flex; justify-content: space-around; align-items: center; ">
+  <div id='container'>
+    <div class="column">
+      <div class='box' style="width: 880px; height:450px; display: flex; justify-content: space-around; align-items: center; ">
 
-          <!-- #sly2{} -->
-          <div id="sly2" class="box-art">
-            <img id="boxArt" src="./box-art/sly2.jpg" style=" height: 300px;" />
-          </div>
-
-          <div id="minecraft"class="box-art">
-            <img id="boxArt" src="./box-art/minecraft.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="bugsnax" class="box-art">
-            <img id="boxArt" src="./box-art/bugsnax.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="journey" class="box-art">
-            <img id="boxArt" src="./box-art/journey.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="celeste" class="box-art">
-            <img id="boxArt" src="./box-art/celeste.png" style="  height: 300px;" />
-          </div>
-
-          <div id="crashbandicoot" class="box-art">
-            <img id="boxArt" src="./box-art/crashbandicoot.png" style="  height: 300px;" />
-          </div>
-
-          <div id="lastofus" class="box-art">
-            <img id="boxArt" src="./box-art/lastofus.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="nier" class="box-art">
-            <img id="boxArt" src="./box-art/nier.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="kingdomhearts" class="box-art">
-            <img id="boxArt" src="./box-art/kingdomhearts.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="wiisports" class="box-art">
-            <img id="boxArt" src="./box-art/wiisports.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="undertale" class="box-art">
-            <img id="boxArt" src="./box-art/undertale.jpg" style="  height: 300px;" />
-          </div>
-
-          <div id="terraria" class="box-art">
-            <img id="boxArt" src="./box-art/terraria.jpg" style="  height: 300px;" />
-          </div>
-
-
+        <!-- #sly2{} -->
+        <div id="sly2" class="box-art">
+          <img id="boxArt" src="./box-art/sly2.jpg" />
         </div>
 
-        <div class='box' style="width: 880px; height:300px; ">
-          <img id="soundArt" src="./soundtrack-art/bugsnax.jpg" />
-          <p id="songName">Sunrise over Snaxtooth Island</p>
-
-          <p id="composer">Seth Parker</p>
-
-          <p id="album">Bugsnax - Original Soundtrack</p>
-
+        <div id="minecraft" class="box-art">
+          <img id="boxArt" src="./box-art/minecraft.jpg" />
         </div>
+
+        <div id="bugsnax" class="box-art">
+          <img id="boxArt" src="./box-art/bugsnax.jpg" />
+        </div>
+
+        <div id="journey" class="box-art">
+          <img id="boxArt" src="./box-art/journey.jpg" />
+        </div>
+
+        <div id="celeste" class="box-art">
+          <img id="boxArt" src="./box-art/celeste.png" />
+        </div>
+
+        <div id="crashbandicoot" class="box-art">
+          <img id="boxArt" src="./box-art/crashbandicoot.png" />
+        </div>
+
+        <div id="lastofus" class="box-art">
+          <img id="boxArt" src="./box-art/lastofus.jpg" />
+        </div>
+
+        <div id="nier" class="box-art">
+          <img id="boxArt" src="./box-art/nier.jpg" />
+        </div>
+
+        <div id="wiisports" class="box-art">
+          <img id="boxArt" src="./box-art/wiisports.jpg" />
+        </div>
+
+        <div id="undertale" class="box-art">
+          <img id="boxArt" src="./box-art/undertale.jpg" />
+        </div>
+
+        <div id="kingdomhearts" class="box-art">
+          <img id="boxArt" src="./box-art/kingdomhearts.jpg" />
+        </div>
+
       </div>
 
+      <div class='box' style="width: 880px; height:325px; ">
+        <img id="soundArt" src="./soundtrack-art/fill.png" />
+        <p id="songName"></p>
 
+        <p id="composer"></p>
 
-      <div class="column">
-        <div class='box' style="width: 600px; height:100%; ">
-          <img id="descArt" src="./box-art/bugsnax.jpg" />
-          <p id="gameHeader">Bugsnax</p>
+        <i><p id="album"></p></i>
 
-          <p id="gameSub">Developed by: Young Horses</p>
+        <audio controls id="myaudio">
+          <source id="audiosource" src="" type="audio/mpeg" />
+        </audio>
 
-          <p id="gameBody">
-
-          </p>
-        </div>
       </div>
     </div>
 
-    <div class="footer">
-      <a href="https://bwin-nyu.github.io/" add target="_blank">Brandon's Flex</a>
-      <a href="https://nz816.github.io/" add target="_blank" >Nicole's Flex</a>
+
+
+    <div class="column">
+      <div class='box' style="width: 600px; height:800px; ">
+        <img id="descArt" src="./box-art/fill.png" />
+        <p id="header">Our Curated Library</p>
+
+        <p id="subhead">By Brandon and Nicole B)</p>
+
+        <p id="body1">Hello! This is Brandon and Nicole's curated library of 11 video game soundtracks that we love and enjoy listening to. We believe that video game music is much more powerful than some would like to believe, and a game's music can powerfully change the theme and feel of a video game. Some of these soundtracks can be seen as having simple instrumentation, but some have very thoughtfully chosen orchestration and instrumentation. Enjoy listening!</p>
+
+        <p id="body2"><b>Honorable mentions...</b>
+          <br />
+          <br />"Cloud Country" from Stardew Valley,
+          <br />"Lovesong for a Deadman" from Call of Duty: Black Ops 2,
+          <br />"Spider Caves" from Jak and Daxter: The Precursor Legacy,
+          <br />"Overworld Day" from Terraria,
+          <br />"Damned" from Call of Duty: Black Ops
+          <br />"Intro" from Maplestory
+          <br />"New Donk City: Daytime" from Super Mario Odyssey
+          <br />"Risk of Rain 2" from Risk of Rain 2
+          <br />"Fallen Down (Reprise)" from UNDERTALE
+          <br />"Main Theme" from DOOM
+          <br />"Arrival on Phobos" from DOOM Eternal
+        </p>
+      </div>
     </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://bwin-nyu.github.io/" add target="_blank">Brandon's Flex</a>
+    <a href="https://nz816.github.io/" add target="_blank">Nicole's Flex</a>
+  </div>
 
 </body>
 
