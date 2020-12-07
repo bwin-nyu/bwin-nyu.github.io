@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "CooperHewitt Bold";
+  src: url("./fonts/CooperHewitt-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CooperHewitt Heavy";
+  src: url("./fonts/CooperHewitt-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CooperHewitt Light";
+  src: url("./fonts/CooperHewitt-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CooperHewitt Thin";
+  src: url("./fonts/CooperHewitt-Thin.otf") format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.landing{
+  background-image: url("./images/background-1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;
+  position: relative;
+}
+
+.prelude{
+  background-image:url("./images/prelude.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alienation{
+  background-image: url("./images/alienation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heartbreak{
+  background-image: url("./images/heartbreak.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.regret{
+  background-image: url("./images/regret.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.family{
+  background-image: url("./images/family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.death {
+  background-image: url("./images/death.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.companion {
+  background-image: url("./images/companion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  font-family: "CooperHewitt Heavy";
+  font-size: 200px;
+}
+
+.fixed {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-subhead {
+  font-family: "CooperHewitt Light";
+  font-size: 60px;
+  margin: 0;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-tag {
+  font-family: "CooperHewitt Light";
+  font-size: 40px;
+
+}
+
+.tag-fix {}
+
+.navbar-brand {
+  font-family: "CooperHewitt Heavy";
+  letter-spacing: 0.5px;
+}
+
+.nav-item {
+  font-family: "CooperHewitt Light";
+}
+
+.font-bold{
+  font-family: "CooperHewitt Bold"
+}
+
+.font-light{
+  font-family: "CooperHewitt Light"
+}
+
+.white {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
