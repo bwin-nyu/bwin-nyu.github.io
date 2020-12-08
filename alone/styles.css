@@ -24,21 +24,73 @@ html {
 
 body {
   background-color: black;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+.header-margin {
+  margin-top: 50px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-audioplayer {
+  background-color: rgb(0,0,0,.7);
+  border-radius: 100px;
+  align-items: center;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 93%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myaudio{
+  height: 5vh;
+  opacity: 0.8;
 }
 
 .landing{
-  background-image: url("./images/background-1920.jpg");
+  background-image: url("./images/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 95vh;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .prelude{
   background-image:url("./images/prelude.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -49,7 +101,8 @@ body {
   background-image: url("./images/alienation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -60,62 +113,83 @@ body {
   background-image: url("./images/heartbreak.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .regret{
   background-image: url("./images/regret.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .family{
   background-image: url("./images/family.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 105vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .death {
   background-image: url("./images/death.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 105vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .companion {
   background-image: url("./images/companion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 105vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .main {
   font-family: "CooperHewitt Heavy";
-  font-size: 200px;
+  font-size: 13vh;
 }
 
 .fixed {
   margin: 0;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .main-subhead {
   font-family: "CooperHewitt Light";
-  font-size: 60px;
+  font-size: 8vh;
   margin: 0;
   position: absolute;
   top: 27%;
@@ -125,27 +199,24 @@ body {
 
 .main-tag {
   font-family: "CooperHewitt Light";
-  font-size: 40px;
-
+  font-size: 4.5vh;
 }
 
-.tag-fix {}
+.instruction {
+  font-family: "CooperHewitt Thin"
+  font-size: 3vh;
+}
 
-.navbar-brand {
+.font-heavy {
   font-family: "CooperHewitt Heavy";
-  letter-spacing: 0.5px;
-}
-
-.nav-item {
-  font-family: "CooperHewitt Light";
 }
 
 .font-bold{
-  font-family: "CooperHewitt Bold"
+  font-family: "CooperHewitt Bold";
 }
 
 .font-light{
-  font-family: "CooperHewitt Light"
+  font-family: "CooperHewitt Light";
 }
 
 .white {
@@ -154,4 +225,142 @@ body {
 
 .center {
   text-align: center;
+}
+
+.card-text {
+  line-height: 1.6;
+}
+
+.definition {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 2vh;
+}
+
+.feeling {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 2.2vh;
+}
+
+#mySidenav {
+  position: fixed;
+  z-index: 1;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -180px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  z-index: 1;
+  text-align: center;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#landing-nav {
+  top: 20px;
+  background-image: url("./images/landing-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#landing-nav:hover{
+  background-image:url("./images/landing.jpg")
+}
+
+#prelude-nav {
+  top: 90px;
+  background-image: url("./images/prelude-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#prelude-nav:hover{
+  background-image:url("./images/prelude.jpg")
+}
+
+#alienation-nav {
+  top: 160px;
+  background-image: url("./images/alienation-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#alienation-nav:hover{
+  background-image:url("./images/alienation.jpg")
+}
+
+#heartbreak-nav {
+  top: 230px;
+  background-image: url("./images/heartbreak-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#heartbreak-nav:hover{
+  background-image:url("./images/heartbreak.jpg")
+}
+
+#regret-nav {
+  top: 300px;
+  background-image: url("./images/regret-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#regret-nav:hover{
+  background-image:url("./images/regret.jpg")
+}
+
+#family-nav {
+  top: 370px;
+  background-image: url("./images/family-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#family-nav:hover{
+  background-image:url("./images/family.jpg")
+}
+
+#death-nav {
+  top: 440px;
+  background-image: url("./images/death-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#death-nav:hover{
+  background-image:url("./images/death.jpg")
+}
+
+#playlist-nav {
+  top: 510px;
+  background-image: url("./images/companion-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#playlist-nav:hover{
+  background-image:url("./images/companion.jpg")
+}
+
+#git-nav {
+  top: 580px;
+  background-image: url("./images/git-nav.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#git-nav:hover{
+  background-image: url("./images/git.jpg");
 }

@@ -7,72 +7,98 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css" />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./scripts/jquery.visible.min.js"></script>
+  <script src="./script.js" defer></script>
+
   <title>Project: ALONE</title>
 </head>
 
 <body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">PROJECT: ALONE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#prelude">Prelude</a>
-        <a class="nav-item nav-link" href="#alienation">Alienation</a>
-        <a class="nav-item nav-link" href="#heartbreak">Heartbreak</a>
-        <a class="nav-item nav-link" href="#regret">Regret</a>
-        <a class="nav-item nav-link" href="#family">Family</a>
-        <a class="nav-item nav-link" href="#death">Death</a>
-        <a class="nav-item nav-link" href="../index.html">Other Works</a>
+
+  <div class="navbar-main">
+    <div id="mySidenav" class="sidenav">
+      <div class="navbar-item">
+        <a href="#landing" id="landing-nav" class="font-heavy">PROJECT: ALONE</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#prelude" id="prelude-nav" class="font-heavy">PRELUDE</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#alienation" id="alienation-nav" class="font-heavy">ALIENATION</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#heartbreak" id="heartbreak-nav" class="font-heavy">HEARTBREAK</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#regret" id="regret-nav" class="font-heavy">REGRET</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#family" id="family-nav" class="font-heavy">FAMILY</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#death" id="death-nav" class="font-heavy">DEATH</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#companion" id="playlist-nav" class="font-heavy">PLAYLIST</a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://bwin-nyu.github.io/" id="git-nav" class="font-heavy">GITHUB</a>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <div class="landing">
+  <div class="main-audioplayer">
+    <audio controls id="myaudio">
+      <source id="audiosource" src="" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div class="landing" id="landing">
     <h2 class="main-subhead white">PROJECT:</h2>
     <h1 class="main white fixed">ALONE</h1>
-    <h2 class="main-tag white" style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -80%);">A web x music experience</h2>
-    <h2 class="main-tag white" style="position: absolute; top: 90%; left: 50%; transform: translate(-50%, -90%);">
+    <h2 class="main-tag white center" style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -80%); min-width: 80vh">
+      A Spotify web experience
+    </h2>
+    <h2 class="main-tag white center" style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -90%); min-width: 80vh">
       Presented by Brandon Win
     </h2>
+    <h3 class="instruction white" style="position: absolute; top: 83%; right: 2%">Album Art: Select Song</h3>
+    <h3 class="instruction white" style="position: absolute; top: 88%; right: 2%">Space: Play/Pause</h3>
   </div>
 
   <div class="prelude" id="prelude">
     <div>
-      <h1 class="main white center">PRELUDE</h1>
+      <h1 class="main white center header-margin">PRELUDE</h1>
     </div>
     <div>
-      <h1 class="font-bold white center">What does alone mean to you?</h1>
+      <h1 class="font-bold white center" style="font-size: 3.5vh; min-width: 80vh">What does alone mean to you?</h1>
     </div>
     <div>
-      <p class="font-light white center" style="font-size: 25px">
+      <p class="font-light white center" style="font-size: 3vh">
         The Merriam-Webster dictionary defines alone as:
       </p>
     </div>
     <div>
-      <h2 class="font-bold white center">(adj.) separate, apart, or isolated from others</h2>
+      <h2 class="font-bold white center" style="font-size: 3.5vh; min-width: 80vh">(adj.) separate, apart, or isolated from others</h2>
     </div>
     <div>
-      <p class="font-light white center" style="font-size: 25px">
+      <p class="font-light white center" style="font-size: 3vh">
         Yet, it also describes it as:
       </p>
     </div>
     <div>
-      <h2 class="font-bold white center">(adv.) incomparable, unique</h2>
+      <h2 class="font-bold white center" style="font-size: 3.5vh; min-width: 80vh; margin-left: 30px; margin-right: 30px;">(adv.) incomparable, unique</h2>
     </div>
     <div>
-      <p class="font-light white center" style="font-size: 25px">
-        <br />
-        <br />
+      <p class="font-light white center" style="font-size: 3vh; min-width: 60vh; margin-left: 30px; margin-right: 30px; margin-top: 60px;">
         In this experience, you'll be taken through the lens of several different musical artists and what "alone" meant to them at different times.
       </p>
     </div>
     <div>
-      <p class="font-light white center" style="font-size: 25px">
+      <p class="font-light white center" style="font-size: 3vh; min-width: 60vh; margin-left: 30px; margin-right: 30px; margin-top: 30px;">
         You might just find that <b>"alone"</b> isn't as simple as a word as it's described by dictionaries.
       </p>
     </div>
@@ -81,72 +107,416 @@
 
   <div class="alienation" id="alienation">
     <div>
-      <h1 class="main white center">ALIENATION</h1>
+      <h1 class="main white center header-margin">ALIENATION</h1>
     </div>
     <div>
-
+      <p class="font-bold white center definition">
+        (noun) the state or experience of being isolated from a group or an activity to which one should belong or in which one should be involved.
+      </p>
+    </div>
+    <div>
+      <p class="font-light white center feeling">
+        Culturally, mentally or emotionally, we all can feel alienated from others around us, being alone not in the physical sense, but alone in our own headspace. It's the feeling of being absolutely isolated in your mind, being unable to reach out
+        to anyone near you because they simply cannot relate to your own experiences and thoughts.
+      </p>
     </div>
     <div class="container">
       <div class="row align-items-center mb-3">
-        <div class="col-sm-8">
+        <div class="col-sm">
           <div class="card mb-3 text-white bg-dark">
-            <h5 class="card-header">Featured - Young the Giant</h5>
+            <h5 class="card-header font-bold">Featured - <a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Young the Giant</a></h5>
             <div class="row no-gutters">
               <div class="col-md-4">
-                <a onclick="document.getElementById('amerika').play();">
-                  <img src="./images/albums/homeofthestrange.jpg" class="card-img">
-                </a>
+                <img id="amerika-click" src="./images/albums/homeofthestrange.jpg" class="card-img" onmouseover="this.src='./images/gifs/amerika.gif';" onmouseout="this.src='./images/albums/homeofthestrange.jpg';">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title font-bold">Amerika</h5>
                   <p class="card-text font-light">The first song released off of their 2016 third studio album, "Home of the Strange". "Amerika" speaks about the modern generation's struggle in "searching for our own ethics in between the
-                    often-contradictory beliefs of this polarized American Modern Age and those of the romanticized cultures of our forefathers." First-generation and second-generation immigrants feel this struggle of finding who you are and what you
+                    often-contradictory beliefs of this polarized American Modern Age and those of the romanticized cultures of our forefathers." First-generation and second-generation immigrants feel this struggle of finding who you are and what
+                    you
                     believe besides our clashing cultures of our foreign-born parents and idealized Americans.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-header">NF</div>
-            <img src="./images/albums/perception.jpg" class="card-img-top">
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/6fOMl44jA4Sp5b9PpYCkzz?si=uUTwhqTCQGSNzlPzQmyX-Q">NF</a></div>
+            <img id="outcast-click" src="./images/albums/perception.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/outcast.gif';" onmouseout="this.src='./images/albums/perception.jpg';">
             <div class="card-body">
-              <h5 class="card-title">Outcast</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title font-bold">Outcast</h5>
+              <p class="card-text font-light">From within his own dark headspace and thoughts, NF raps on "Outcast" about how he continues to pursue his own path and not fit in with the rest of the mainstream rap industry, calling himself to be an
+                "outcast" with his own negative thoughts of fear, anger and trauma. He introduces his own symbolism of keys, a prison cell and his painted-over smile, which are used throughout his career repeatedly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Eminem</a></div>
+            <img  id="stan-click" src="./images/albums/curtaincall.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/stan.gif';" onmouseout="this.src='./images/albums/curtaincall.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Stan</h5>
+              <p class="card-text font-light">One of Eminem's most notable hits to-date, "Stan" tells the story of a man who's become completely obsessed with Eminem, alienating himself from his significant other and society as a whole, to the point
+                of insanity, delusion and ultimately homicide by killing his girlfriend and her unborn child. The song was also the origin behind the modern term "stan" used in fan-circles worldwide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">The Beatles</a></div>
+            <img id="guitar-click" src="./images/albums/thebeatles.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/guitargentlyweeps.gif';" onmouseout="this.src='./images/albums/thebeatles.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">While My Guitar Gently Weeps</h5>
+              <p class="card-text font-light">"While My Guitar Gently Weeps" is one of the Beatles' top hits during their career, with the song being written by George Harrison, the lead guitarist. Following the disharmony in the band after their
+                transcendental meditation trip to India, Harrison conveys towards listeners the potential for universal love, or the "love there that's sleeping", among all people of the world, taking on a much more alienated and observatorial look
+                on the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Josh A</a></div>
+            <img id="insidehouse-click" src="./images/albums/blessed3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">All I Do Is Sit Inside My House All Day</h5>
+              <p class="card-text font-light">Released on the final album of the "Blessed" trilogy, "All I Do Is Sit Inside My House All Day" by underground rap artist Josh A speaks about Josh's apathy and inability to change and find motivation in
+                life, which in turn makes him feel alienated about how different he is from other people at his then-age of 22 years old. The song explores themes that almost border on regret and apathy towards his growing rap career.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin: 20px;">
+    </div>
+  </div>
+
+  <div class="heartbreak" id="heartbreak">
+    <div>
+      <h1 class="main white center header-margin">HEARTBREAK</h1>
+    </div>
+    <div>
+      <p class="font-bold white center definition">
+        (noun) overwhelming distress.
+      </p>
+    </div>
+    <div>
+      <p class="font-light white center feeling">
+        You would expect that the more one experiences an emotion, the more dull one's emotional response would be. Yet, experiencing "heartbreak" seems to happen a lot, but it never hurts less any consecutive time.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-sm">
+          <div class="card mb-3 text-white bg-dark">
+            <h5 class="text-decoration card-header font-bold">Featured - <a href="https://open.spotify.com/artist/4xRYI6VqpkE3UwrDrAZL8L?si=MbbWDngySTCDcadu8XjYXA">Logic</a></h5>
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="nikki-click" src="./images/albums/underpressure.jpg" class="card-img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title font-bold">Nikki</h5>
+                  <p class="card-text font-light">During the start of his hugely successful career, Logic would frequently have a verse or two in his early songs about someone named "Nikki", much to the curiosity of his listeners. In the deluxe
+                    version of his first studio album, Logic revealed that "Nikki" was not a person, but rather was a personification for his overwhelming nicotine addiction. Logic explores his need for Nikki and his inability to enjoy himself or
+                    enjoy life without Nikki, becoming a slave for her.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-sm">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-header">Eminem</div>
-            <img src="./images/albums/curtaincall.jpg" class="card-img-top" alt="...">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Miley Cyrus</a></div>
+            <img id="slideaway-click" src="./images/albums/slideaway.png" class="card-img-top" onmouseover="this.src='./images/gifs/slideaway.gif';" onmouseout="this.src='./images/albums/slideaway.png';">
             <div class="card-body">
-              <h5 class="card-title">Stan</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title font-bold">Slide Away</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
         <div class="col-sm">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-header">The Beatles</div>
-            <img src="./images/albums/thebeatles.jpg" class="card-img-top" alt="...">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Witt Lowry</a></div>
+            <img id="intoyourarms-click" src="./images/albums/intoyourarms.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/intoyourarms.gif';" onmouseout="this.src='./images/albums/intoyourarms.jpg';">
             <div class="card-body">
-              <h5 class="card-title">While My Guitar Gently Weeps</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title font-bold">Into Your Arms (feat. Ava Max)</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
         <div class="col-sm">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-header">Josh A</div>
-            <img src="./images/blessed3.jpg" class="card-img-top" alt="...">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Jakey</a></div>
+            <img id="mobydick-click" src="./images/albums/mobydick.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/mobydick.gif';" onmouseout="this.src='./images/albums/mobydick.jpg';">
             <div class="card-body">
-              <h5 class="card-title">All I Do Is Sit Inside My House All Day</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title font-bold">Moby Dick</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold"><a href="https://open.spotify.com/artist/4j56EQDQu5XnL7R3E9iFJT?si=eySkkJ-IQCSiExLws5Y8qg">Josh A</a></div>
+            <img id="broken-click" src="./images/albums/fearless.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Broken</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin: 20px;">
+    </div>
+  </div>
+
+  <div class="regret" id="regret">
+    <div>
+      <h1 class="main white center header-margin">REGRET</h1>
+    </div>
+    <div>
+      <p class="font-bold white center definition">
+        (noun) a feeling of sadness, repentance, or disappointment over something that has happened or been done.
+      </p>
+    </div>
+    <div>
+      <p class="font-light white center feeling">
+        "Regret is such a short word... and yet it stretches on forever." -Ranata Suzuki. People like to reminisce about what could've been done, why didn't they do this or that, or what could've happened. However, as much as we try to relate to one another in the past, there is no true way for one to relate to the miniscule differences of our lives that makes us who we are. In this, we are truly alone.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-sm">
+          <div class="card mb-3 text-white bg-dark">
+            <h5 class="card-header font-bold">Featured - <a href="https://open.spotify.com/artist/6fOMl44jA4Sp5b9PpYCkzz?si=uUTwhqTCQGSNzlPzQmyX-Q">NF</a></h5>
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="imissthedays-click" src="./images/albums/thesearch.png" class="card-img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title font-bold">I Miss The Days</h5>
+                  <p class="card-text font-light">The first song released off of their 2016 third studio album, "Home of the Strange". "Amerika" speaks about the modern generation's struggle in "searching for our own ethics in between the
+                    often-contradictory beliefs of this polarized American Modern Age and those of the romanticized cultures of our forefathers." First-generation and second-generation immigrants feel this struggle of finding who you are and what
+                    you
+                    believe besides our clashing cultures of our foreign-born parents and idealized Americans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Rob Thomas</div>
+            <img id="lonelynomore-click" src="./images/albums/somethingtobe.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/lonelynomore.gif';" onmouseout="this.src='./images/albums/somethingtobe.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Lonely No More</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">The Fray</div>
+            <img id="overmyhead-click" src="./images/albums/howtosavealife.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/overmyhead.gif';" onmouseout="this.src='./images/albums/howtosavealife.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Over My Head (Cable Car)</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">The Beatles</div>
+            <img id="yesterday-click" src="./images/albums/help.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/yesterday.gif';" onmouseout="this.src='./images/albums/help.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Yesterday</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Josh A</div>
+            <img id="moodswings-click" src="./images/albums/yourenotalone.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Mood Swings</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin: 20px;">
+    </div>
+  </div>
+
+  <div class="family" id="family">
+    <div>
+      <h1 class="main white center header-margin">FAMILY</h1>
+    </div>
+    <div>
+      <p class="font-bold white center definition">
+        (noun) a group of one or more parents and their children living together as a unit; all the descendants of a common ancestor.
+      </p>
+    </div>
+    <div>
+      <p class="font-light white center feeling">
+        You would expect similarities between you and those who have given birth to you or raised you. Some sort of resemblance, agreement, or cooperation. Or even for them to be there with you through thick and thin. Yet, for some, there comes a point when you realize that in your household or family, you
+        don't always get what you think you deserve, like so many others do. You are truly alone.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-sm">
+          <div class="card mb-3 text-white bg-dark">
+            <h5 class="card-header font-bold">Featured - Ed Sheeran</h5>
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="smallbump-click" src="./images/albums/plus.png" class="card-img" onmouseover="this.src='./images/gifs/smallbump.gif';" onmouseout="this.src='./images/albums/plus.png';">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title font-bold">Small Bump</h5>
+                  <p class="card-text font-light">The first song released off of their 2016 third studio album, "Home of the Strange". "Amerika" speaks about the modern generation's struggle in "searching for our own ethics in between the
+                    often-contradictory beliefs of this polarized American Modern Age and those of the romanticized cultures of our forefathers." First-generation and second-generation immigrants feel this struggle of finding who you are and what
+                    you
+                    believe besides our clashing cultures of our foreign-born parents and idealized Americans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Eminem</div>
+            <img id="mockingbird-click" src="./images/albums/encore.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/mockingbird.gif';" onmouseout="this.src='./images/albums/encore.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Mockingbird</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Ed Sheeran</div>
+            <img id="runaway-click" src="./images/albums/x.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Runaway</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">G-Eazy</div>
+            <img id="everythingwillbeok-click" src="./images/albums/whenitsdarkout.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Everything Will Be Ok (feat. Kehlani)</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Witt Lowry</div>
+            <img id="lastletter-click" src="./images/albums/icouldnotplanthis.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/lastletter.gif';" onmouseout="this.src='./images/albums/icouldnotplanthis.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Last Letter</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin: 20px;">
+    </div>
+  </div>
+
+  <div class="death" id="death">
+    <div>
+      <h1 class="main white center header-margin">DEATH</h1>
+    </div>
+    <div>
+      <p class="font-bold white center definition">
+        (noun) the action or fact of dying or being killed; the end of the life of a person or organism.
+      </p>
+    </div>
+    <div>
+      <p class="font-light white center feeling">
+        Some fear the end. Some embrace the release. Some wonder what comes after. Some attempt to accomplish what they haven't done yet. But for those who are still here, they cry, "Where are those who have left already?"
+      </p>
+    </div>
+    <div class="container" style="margin-bottom: 40px;">
+      <div class="row align-items-center mb-3">
+        <div class="col-sm">
+          <div class="card mb-3 text-white bg-dark">
+            <h5 class="card-header font-bold">Featured - Jakey</h5>
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="medium-click" src="./images/albums/medium.jpg" class="card-img" onmouseover="this.src='./images/gifs/medium.gif';" onmouseout="this.src='./images/albums/medium.jpg';">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title font-bold">Medium</h5>
+                  <p class="card-text font-light">The first song released off of their 2016 third studio album, "Home of the Strange". "Amerika" speaks about the modern generation's struggle in "searching for our own ethics in between the
+                    often-contradictory beliefs of this polarized American Modern Age and those of the romanticized cultures of our forefathers." First-generation and second-generation immigrants feel this struggle of finding who you are and what
+                    you
+                    believe besides our clashing cultures of our foreign-born parents and idealized Americans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">The Eels</div>
+            <img id="ineedsomesleep-click" src="./images/albums/meettheeels.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">I Need Some Sleep</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">NF</div>
+            <img id="howcouldyouleaveus-click" src="./images/albums/therapysession.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/howcouldyouleaveus.gif';" onmouseout="this.src='./images/albums/therapysession.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">How Could You Leave Us</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Imagine Dragons</div>
+            <img id="theunknown-click" src="./images/albums/smokeandmirrors.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-bold">The Unknown</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="h-100 card text-white bg-dark mb-3">
+            <div class="card-header font-bold">Eminem</div>
+            <img id="toysoldiers-click" src="./images/albums/encore.jpg" class="card-img-top" onmouseover="this.src='./images/gifs/liketoysoldiers.gif';" onmouseout="this.src='./images/albums/encore.jpg';">
+            <div class="card-body">
+              <h5 class="card-title font-bold">Like Toy Soldiers</h5>
+              <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
@@ -154,28 +524,12 @@
     </div>
   </div>
 
-  <div class="heartbreak" id="heartbreak">
-    <h1 class="main white center">HEARTBREAK</h1>
-  </div>
-
-  <div class="regret" id="regret">
-    <h1 class="main white center">REGRET</h1>
-  </div>
-
-  <div class="family" id="family">
-    <h1 class="main white center">FAMILY</h1>
-  </div>
-
-  <div class="death" id="death">
-    <h1 class="main white center">DEATH</h1>
-  </div>
-
   <div class="companion" id="companion">
     <div>
-      <h1 class="main white center">PLAYLIST</h1>
+      <h1 class="main white center header-margin" style="margin-top: 30px">PLAYLIST</h1>
     </div>
     <div>
-      <iframe src="https://open.spotify.com/embed/playlist/6E3Rp5ne78hAiihe1PvcS4" width="600" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/6E3Rp5ne78hAiihe1PvcS4" width="600" height="500px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div>
       <br />
@@ -184,8 +538,7 @@
       </p>
     </div>
     <div>
-      <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:12133046697&size=detail&theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; text-align: center"
-        allowtransparency="true"></iframe>
+      <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:12133046697&size=detail&theme=dark" width="205" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden" allowtransparency="true"></iframe>
     </div>
   </div>
 </body>
