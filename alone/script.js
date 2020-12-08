@@ -144,8 +144,8 @@ $("#theunknown-click").click(function() {
   audio.play();
 });
 
-$("#toysoldiers-click").click(function() {
-  $("#audiosource").attr("src","./songs/liketoysoldiers.mp3");
+$("#shadowoftheday-click").click(function() {
+  $("#audiosource").attr("src","./songs/shadowoftheday.mp3");
   audio.load();
   audio.play();
 });
